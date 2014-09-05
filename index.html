@@ -1,0 +1,113 @@
+<html>
+<body>
+	<style type="text/css">
+		.foo {
+			font-family: Arial;
+			font-weight: bold;
+			font-size: 55px;
+			color: rgb(255, 255, 255);
+			text-shadow: 2px 2px 2px rgb(83, 154, 205);
+			display: block;
+			max-width: 1060px;
+		}
+
+		.foo2 {
+			display: block;
+			margin-top:15px;
+		}
+
+		.foo2 a {
+			text-decoration: none;
+			font-family: Arial;
+			font-weight: lighter;
+			font-size: 50px;
+			color: rgb(255, 255, 255);
+			text-shadow: 2px 2px 2px rgb(83, 154, 205);
+		}
+
+
+		@keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-webkit-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-ms-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		@-moz-keyframes animatedBackground {
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+		}
+		
+		#animate-area	{ 
+			width: 100%; 
+			height: 190px;
+
+			background-image: url(bg-clouds.png);
+			background-position: 0px 0px;
+			background-repeat: repeat-x;
+
+			animation: animatedBackground 40s linear infinite;
+			-ms-animation: animatedBackground 40s linear infinite;
+			-moz-animation: animatedBackground 40s linear infinite;
+			-webkit-animation: animatedBackground 40s linear infinite;
+		}
+
+		#animate-area2	{ 
+			width: 100%; 
+			height: 190px;
+
+			background-image: url(bg-clouds2.png);
+			background-position: 0px 0px;
+			background-repeat: repeat-x;
+
+			animation: animatedBackground 40s linear infinite;
+			-ms-animation: animatedBackground 40s linear infinite;
+			-moz-animation: animatedBackground 40s linear infinite;
+			-webkit-animation: animatedBackground 40s linear infinite;
+		}
+
+		html, body {
+			background-color:#8ec1da;
+			margin:0;
+			padding:0;
+			width: 100%;
+			height: 100%;
+			min-height: 600px;
+		}
+		
+		.page-wrapper {
+	    	min-height: 100%;
+	    	margin-bottom: -190px;
+		}
+		
+		* html .page-wrapper {
+		    height: 100%;
+		}
+
+		.page-buffer {
+	    	height: 190px;
+	    	width: 100%;
+		}
+	</style>
+
+
+	<div class="page-wrapper">
+		<div id="animate-area2"></div>
+
+		<center style="padding:20px;">
+			<span class="foo">If you have any questions, please do not hesitate to contact me :)</span>
+			<span class="foo2"><a href="mailto:sbolotaev@gmail.com">sbolotaev@gmail.com</a></span>
+		</center>
+
+		<div class="page-buffer"></div>
+	</div>
+
+	<div id="animate-area"></div>
+
+</body>
+</html>
